@@ -9,12 +9,6 @@ defaults:
     shell: bash -l {0}
 
 jobs:
-  Build:
-      name: Build
-      permissions:
-        statuses: write
-        pull-requests: write
-      uses: ./.github/workflows/_build.yml
   Deploy:
     name: Deploy
     runs-on: macos-11
