@@ -9,13 +9,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  Build:
-    name: Build
-    permissions:
-      statuses: write
-      pull-requests: write
-    uses: ./.github/workflows/_build.yml
-
   ReleaseDraft:
     runs-on: ubuntu-latest
     permissions:

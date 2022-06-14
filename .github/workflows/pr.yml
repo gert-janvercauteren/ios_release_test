@@ -13,14 +13,6 @@ defaults:
     shell: bash -l {0}
 
 jobs:
-
-  Build:
-    name: Build
-    permissions:
-      statuses: write
-      pull-requests: write
-    uses: ./.github/workflows/_build.yml
-
   Dependabot:
     runs-on: ubuntu-latest
     permissions:
