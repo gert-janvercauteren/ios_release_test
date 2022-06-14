@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ReleaseTestGJ'
   s.version          = '2.0.0'
-  s.summary          = 'A short description of ReleaseTest.'
+  s.summary          = 'A library to start testing automated releases.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This pod is used to validate releasing new pod versions with GH actions and Release drafter
                        DESC
 
   s.homepage         = 'https://github.com/gert-janvercauteren/ios_release_test'
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ReleaseTest/ReleaseTest/Classes/**/*'
+  s.source_files = 'ReleaseTest/Classes/**/*'
   
   # s.resource_bundles = {
   #   'ReleaseTest' => ['ReleaseTest/Assets/*.png']
