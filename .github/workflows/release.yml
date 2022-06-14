@@ -25,13 +25,6 @@ jobs:
     - name: Install cocoapods
       run: gem install cocoapods
       
-    - name: Update pods versions
-      run: |
-        bundle exec rake update_all_modules_version POD_VERSION=${{ github.event.inputs.tag }}
-    - name: Pod repo update
-      run: | 
-        pod repo update
-
     - uses: release-drafter/release-drafter@v5
       if: ${{ github.event.inputs.action_tag == 'yes' }}
       with:
@@ -42,26 +35,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Publish Pods - Backpack Common
+    - name: Publish Pods - Stuff
       run: |
         set -eo pipefail
-        pod trunk push Backpack-Common.podspec --allow-warnings --synchronous
-        pod repo update
-      env:
-        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-
-    - name: Publish Pods - Backpack UIKit
-      run: |
-        set -eo pipefail
-        pod trunk push Backpack.podspec --allow-warnings --synchronous
-        pod repo update
-      env:
-        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-
-    - name: Publish Pods - Backpack SwiftUI
-      run: |
-        set -eo pipefail
-        pod trunk push Backpack-SwiftUI.podspec --allow-warnings --synchronous
+        pod trunk push ReleaseTest.podspec --allow-warnings --synchronous
         pod repo update
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
