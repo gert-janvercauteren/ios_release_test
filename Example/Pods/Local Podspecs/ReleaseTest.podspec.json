@@ -1,0 +1,22 @@
+{
+  "name": "ReleaseTest",
+  "version": "0.1.0",
+  "summary": "A short description of ReleaseTest.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Gert-Jan Vercauteren/ReleaseTest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Gert-Jan Vercauteren": "gert-jan.vercauteren@skyscanner.net"
+  },
+  "source": {
+    "git": "https://github.com/Gert-Jan Vercauteren/ReleaseTest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ReleaseTest/ReleaseTest/Classes/**/*"
+}

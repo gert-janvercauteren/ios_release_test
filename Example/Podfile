@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ReleaseTest_Example' do
+  pod 'ReleaseTest', :path => '../'
+
+  target 'ReleaseTest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

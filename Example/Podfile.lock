@@ -1,0 +1,16 @@
+PODS:
+  - ReleaseTest (0.1.0)
+
+DEPENDENCIES:
+  - ReleaseTest (from `../`)
+
+EXTERNAL SOURCES:
+  ReleaseTest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ReleaseTest: 69c945ebf1eb0fd1ac5de6f66830a15e4b434ed0
+
+PODFILE CHECKSUM: 08cdb53770c37f9ec5c33e5e1de4d8e3b2017d3c
+
+COCOAPODS: 1.11.3

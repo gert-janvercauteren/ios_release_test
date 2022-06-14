@@ -1,0 +1,6 @@
+framework module ReleaseTest {
+  umbrella header "ReleaseTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
