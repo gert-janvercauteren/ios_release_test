@@ -20,7 +20,7 @@ pod 'ReleaseTest'
 
 ## Author
 
-Gert-Jan Vercauteren, gert-jan.vercauteren@skyscanner.net
+Gert-Jan Vercauteren, gert-jan.vercauteren@skyscanner.net test
 
 ## License
 
