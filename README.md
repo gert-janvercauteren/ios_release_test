@@ -1,7 +1,7 @@
 # ReleaseTest
-[![Version](https://img.shields.io/cocoapods/v/ReleaseTest.svg?style=flat)](https://cocoapods.org/pods/ReleaseTest)
-[![License](https://img.shields.io/cocoapods/l/ReleaseTest.svg?style=flat)](https://cocoapods.org/pods/ReleaseTest)
-[![Platform](https://img.shields.io/cocoapods/p/ReleaseTest.svg?style=flat)](https://cocoapods.org/pods/ReleaseTest)
+[![Version](https://img.shields.io/cocoapods/v/ReleaseTest.svg?style=flat)](https://cocoapods.org/pods/ReleaseTestGJ)
+[![License](https://img.shields.io/cocoapods/l/ReleaseTest.svg?style=flat)](https://cocoapods.org/pods/ReleaseTestGJ)
+[![Platform](https://img.shields.io/cocoapods/p/ReleaseTest.svg?style=flat)](https://cocoapods.org/pods/ReleaseTestGJ)
 
 ## Example
 
@@ -11,11 +11,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-ReleaseTest is available through [CocoaPods](https://cocoapods.org). To install
+ReleaseTestGJ is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ReleaseTest'
+pod 'ReleaseTestGJ'
 ```
 
 ## Author
