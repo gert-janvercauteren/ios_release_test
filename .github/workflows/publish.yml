@@ -35,6 +35,8 @@ jobs:
     - name: Publish Pods - Stuff
       run: |
         set -eo pipefail
+        export LIB_VERSION={{ github.event.inputs.tag }}
+        pod lib lint ReleaseTestGJ.podspec --allow-warnings
         pod trunk push ReleaseTestGJ.podspec --allow-warnings --synchronous
         pod repo update
       env:
