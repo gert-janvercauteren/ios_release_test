@@ -1,7 +1,7 @@
 # ReleaseTest
-[![Version](https://img.shields.io/cocoapods/v/ReleaseTest.svg?style=flat)](https://cocoapods.org/pods/ReleaseTestGJ)
-[![License](https://img.shields.io/cocoapods/l/ReleaseTest.svg?style=flat)](https://cocoapods.org/pods/ReleaseTestGJ)
-[![Platform](https://img.shields.io/cocoapods/p/ReleaseTest.svg?style=flat)](https://cocoapods.org/pods/ReleaseTestGJ)
+[![Version](https://img.shields.io/cocoapods/v/ReleaseTestGJ.svg?style=flat)](https://cocoapods.org/pods/ReleaseTestGJ)
+[![License](https://img.shields.io/cocoapods/l/ReleaseTestGJ.svg?style=flat)](https://cocoapods.org/pods/ReleaseTestGJ)
+[![Platform](https://img.shields.io/cocoapods/p/ReleaseTestGJ.svg?style=flat)](https://cocoapods.org/pods/ReleaseTestGJ)
 
 ## Example
 
