@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReleaseTestGJ'
-  s.version          = '2.1.0'
+  s.version          =  ENV['LIB_VERSION'] || '1.0'
   s.summary          = 'A library to start testing automated releases.'
 
 # This description is used to generate tags and improve search results.
