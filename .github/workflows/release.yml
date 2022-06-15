@@ -7,15 +7,18 @@ defaults:
     shell: bash -l {0}
 
 jobs:
-  Deploy:
-    name: Deploy
-    runs-on: macos-11
-    environment: Publishing
-    timeout-minutes: 30
+  build:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
       with:
         ref: main
+
+    - name: Get release tag
+      id: get_release_tag
+      uses: release-drafter/release-drafter@v5
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Bump version
       run: |
@@ -26,6 +29,7 @@ jobs:
       with:
           commit_message: Version bump
           tagging_message: ${{ steps.get_release_tag.outputs.tag_name }}
+          
     - name: Publish release
       uses: release-drafter/release-drafter@v5
       with:
