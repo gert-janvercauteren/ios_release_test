@@ -1,0 +1,18 @@
+name: Build
+
+on:
+  workflow_call:
+
+defaults:
+  run:
+    shell: bash -l {0}
+
+jobs:
+  Build:
+    name: Build
+    runs-on: macos-11
+    steps:
+    - name: Do the building
+      uses: actions/hello-world-javascript-action@main
+      with:
+        who-to-greet: 'Building'
